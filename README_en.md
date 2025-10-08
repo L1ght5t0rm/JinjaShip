@@ -1,8 +1,14 @@
 ## JinjaShip
 Jinja2 template injection, route injection memory backdoor
 
+Route injection memory backdoor is a fileless web backdoor technology that achieves in-memory persistence by dynamically adding malicious routes to Jinja2 templates, enabling remote command and code execution capability without writing code to disk files.
+
+This project can be used after the attacker obtains the server-side template `exec` function invocation method. By executing code to directly control the functions within `flask.current_app.before_request_funcs` of Jinja2 templates, it achieves dynamic registration of malicious routes and implements memory backdoor injection.
+
 ### Usage
   **Engliash** | [Chinese](README.md)
+
+Injection method see **end of document**
 
 #### Parameter Passing
 You can pass commands or code to be executed on the target machine via GET, POST, or UA methods as parameters
@@ -54,7 +60,7 @@ You can pass commands or code to be executed on the target machine via GET, POST
 
 ### Injection Method
 
-Use the exec function to execute the **content** inside the exec in the last line of code
+##### **Use the exec function to execute the content inside the exec in the last line of code**
 
 Finally, here's a one-sentence backdoor <!-- meow~ -->
 
