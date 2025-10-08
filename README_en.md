@@ -60,9 +60,9 @@ You can pass commands or code to be executed on the target machine via GET, POST
 
 ### Injection Method
 
-##### **Use the exec function to execute the content inside the exec in the last line of code**
+##### **Use the exec function to execute the content inside the exec in the last line of  the project file's code**
 
-Finally, here's a one-sentence backdoor <!-- meow~ -->
+Finally, here's another one-sentence backdoor <!-- meow~ -->
 
     exec('''
     
